@@ -1,0 +1,14 @@
+{
+  "name": "hello-cli",
+  "version": "1.0.0",
+  "description": "My first Node.js CLI application",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Parker",
+  "license": "ISC",
+  "bin": {
+    "hello": "./bin/index.js"
+  }
+}
