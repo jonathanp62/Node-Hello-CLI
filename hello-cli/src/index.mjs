@@ -1,5 +1,5 @@
 /**
- * @(#)index.js 1.2.0   08/14/2023
+ * @(#)index.mjs    1.2.0   08/14/2023
  *
  * Copyright (c) Jonathan M. Parker
  * 324 Lantana Drive

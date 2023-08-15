@@ -2,15 +2,12 @@
   "name": "hello-cli",
   "version": "1.2.0",
   "description": "My first Node.js CLI application",
-  "main": "src/index.js",
+  "main": "src/index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jonathan Parker",
   "license": "ISC",
-  "bin": {
-    "hello": "./bin/index.js"
-  },
   "dependencies": {
     "boxen": "^7.1.1",
     "chalk": "^5.3.0"
