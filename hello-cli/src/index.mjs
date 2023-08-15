@@ -1,5 +1,5 @@
 /**
- * @(#)index.mjs    1.2.0   08/14/2023
+ * (#)index.mjs 1.2.0   08/14/2023
  *
  * Copyright (c) Jonathan M. Parker
  * 324 Lantana Drive
@@ -7,6 +7,7 @@
  * All Rights Reserved.
  */
 
+import { add, multiply, subtract } from "./utils/math.mjs";
 import { argv } from "node:process";
 
 import boxen from "boxen";
@@ -26,17 +27,6 @@ const boxenOptions = {
 
 const msgBox = boxen(greeting, boxenOptions);
 
-/**
- * Add two numbers together.
- *
- * @param  {Number} x   The first number
- * @param  {Number} y   The second number
- * @return {Number}     The sum of the two numbers
- */
-export const adder = function(x, y) {
-    return x + y;
-};
-
 echoCommandLineArguments();
 
 let message;
@@ -49,7 +39,9 @@ if (argv.length === 3) {
 
 writeToConsole(message);
 writeToConsole(msgBox);
-writeToConsole(`The sum of 61 and 24 is ${adder(61, 24)}`);
+writeToConsole(`The sum of 61 and 24 is ${add(61, 24)}`);
+writeToConsole(`The difference of 61 and 24 is ${subtract(61, 24)}`);
+writeToConsole(`The product of 61 and 24 is ${multiply(61, 24)}`);
 
 /**
  * Write the string to the console.
