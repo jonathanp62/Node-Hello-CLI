@@ -9,8 +9,8 @@
 
 import { argv } from "node:process";
 
-import chalk from "chalk";
 import boxen from "boxen";
+import chalk from "chalk";
 import pkg from '../package.json' assert {type: 'json'};
 
 const hello = "Hello from version " + pkg.version + "!";
@@ -33,7 +33,7 @@ const msgBox = boxen(greeting, boxenOptions);
  * @param  {Number} y   The second number
  * @return {Number}     The sum of the two numbers
  */
-const adder = function(x, y) {
+export const adder = function(x, y) {
     return x + y;
 };
 
