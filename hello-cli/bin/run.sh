@@ -14,4 +14,12 @@
 # Usage:
 #       run.sh
 
-node --no-warnings .
+APP_HOME=${HOME}/Node-Projects/Hello-CLI/hello-cli
+
+if cd ${APP_HOME}
+then
+  node --no-warnings src $@
+else
+  echo "Failed to change to ${APP_HOME}."
+  exit 1
+fi
