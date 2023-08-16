@@ -7,7 +7,7 @@
  * All Rights Reserved.
  */
 
-import { add, multiply, subtract } from "./utils/math.mjs";
+import { add, divide, modulo, multiply, subtract } from "./utils/math.mjs";
 import { argv } from "node:process";
 
 import boxen from "boxen";
@@ -42,6 +42,8 @@ writeToConsole(msgBox);
 writeToConsole(`The sum of 61 and 24 is ${add(61, 24)}`);
 writeToConsole(`The difference of 61 and 24 is ${subtract(61, 24)}`);
 writeToConsole(`The product of 61 and 24 is ${multiply(61, 24)}`);
+writeToConsole(`The quotient of 60 and 16 is ${divide(60, 16)}`);
+writeToConsole(`The remainder of 60 and 16 is ${modulo(60, 16)}`);
 
 /**
  * Write the string to the console.

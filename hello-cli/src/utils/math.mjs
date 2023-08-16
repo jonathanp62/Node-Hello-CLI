@@ -39,3 +39,25 @@ export const subtract = function(x, y) {
 export const multiply = function(x, y) {
     return x * y;
 };
+
+/**
+ * Divide the first number by the second.
+ *
+ * @param  {Number} x   The first number
+ * @param  {Number} y   The second number
+ * @return {Number}     The sum of the two numbers
+ */
+export const divide = function(x, y) {
+    return x / y;
+};
+
+/**
+ * Modulo the first number by the second.
+ *
+ * @param  {Number} x   The first number
+ * @param  {Number} y   The second number
+ * @return {Number}     The sum of the two numbers
+ */
+export const modulo = function(x, y) {
+    return x % y;
+};

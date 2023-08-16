@@ -7,7 +7,7 @@
  * All Rights Reserved.
  */
 
-import { add, multiply, subtract } from "../src/utils/math.mjs";
+import { add, divide, modulo, multiply, subtract } from "../src/utils/math.mjs";
 import { test } from "node:test";
 
 import assert from "assert/strict";
@@ -43,4 +43,26 @@ test('asynchronous passing multiply', async (t) => {
     // This test passes because the Promise returned by the async
     // function is not rejected.
     assert.strictEqual(multiply(24, 61), 1464);
+});
+
+test('synchronous passing divide', (t) => {
+    // This test passes because it does not throw an exception.
+    assert.strictEqual(divide(60, 4), 15);
+});
+
+test('asynchronous passing divide', async (t) => {
+    // This test passes because the Promise returned by the async
+    // function is not rejected.
+    assert.strictEqual(divide(60, 15), 4);
+});
+
+test('synchronous passing modulo', (t) => {
+    // This test passes because it does not throw an exception.
+    assert.strictEqual(modulo(61, 4), 1);
+});
+
+test('asynchronous passing modulo', async (t) => {
+    // This test passes because the Promise returned by the async
+    // function is not rejected.
+    assert.strictEqual(modulo(60, 16), 12);
 });
