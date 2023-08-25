@@ -18,7 +18,7 @@ APP_HOME=${HOME}/Node-Projects/Hello-CLI/hello-cli
 
 if cd ${APP_HOME}
 then
-  node --no-warnings src $@
+  node --no-warnings . $@
 else
   echo "Failed to change to ${APP_HOME}."
   exit 1
