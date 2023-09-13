@@ -2,6 +2,14 @@
   "name": "hello-cli",
   "version": "1.2.0",
   "description": "My first Node.js CLI application",
+  "keywords": [
+    "node",
+    "learning",
+    "cli"
+  ],
+  "repository": {
+    "type": "git"
+  },
   "main": "src/index.mjs",
   "bin": {
     "run": "./src/index.mjs"
